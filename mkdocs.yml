@@ -1,0 +1,52 @@
+site_name: Gerenciador de Disciplinas
+site_description: Sistema pessoal de gerenciamento de disciplinas com Oracle Autonomous Database
+site_author: USUARIO
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: pt
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Início: index.md
+  - Setup:
+      - Pré-requisitos: setup/prerequisitos.md
+      - Instalação: setup/instalacao.md
+  - Banco de Dados:
+      - Modelo de Dados: banco/modelo-dados.md
+      - DDL: banco/ddl.md
+  - Uso:
+      - Executar a aplicação: uso/executar.md
+      - Funcionalidades: uso/funcionalidades.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - tables

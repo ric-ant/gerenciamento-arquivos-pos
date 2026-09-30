@@ -1,0 +1,41 @@
+# =============================================================
+# Gerenciador de Disciplinas — .gitignore
+# =============================================================
+
+# --- Credenciais e variáveis de ambiente ---------------------
+.env
+
+# --- Oracle Wallet (contém certificados mTLS — NUNCA versionar)
+wallet/
+
+# --- Python -----------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pycache
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# --- pyenv ------------------------------------------------------
+# .python-version é versionado intencionalmente neste projeto
+# (remove a linha abaixo se quiser ignorá-lo)
+# .python-version
+
+# --- Poetry / venv ----------------------------------------------
+.venv/
+venv/
+env/
+
+# --- MkDocs build -----------------------------------------------
+site/
+
+# --- IDE / editores ---------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

@@ -1,0 +1,4 @@
+[server]
+# Garante que a raiz do projeto está no PYTHONPATH,
+# permitindo imports do tipo "from app.database import ..."
+# em todos os scripts Streamlit (main.py e pages/).

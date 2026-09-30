@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "projeto-pessoal-bd"
+version = "0.1.0"
+description = "Gerenciador de Disciplinas com Oracle Autonomous Database"
+authors = ["USUARIO"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "*"
+sqlalchemy = "*"
+oracledb = "=2.4.0"
+python-dotenv = "*"
+
+[tool.poetry.group.dev.dependencies]
+mkdocs-material = "*"
+pytest = "*"
+ruff = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
