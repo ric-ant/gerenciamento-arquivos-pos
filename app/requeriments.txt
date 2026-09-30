@@ -1,0 +1,5 @@
+python = "^3.12"
+streamlit = "*"
+sqlalchemy = "*"
+oracledb = "=2.4.0"
+python-dotenv = "*"
