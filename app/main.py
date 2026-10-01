@@ -16,8 +16,7 @@ Estrutura multipage:
 
 import streamlit as st
 
-from app.database import verificar_conexao
-from app.database import get_session
+
 from app.repository import listar_disciplinas
 from app.models import Disciplina
 
