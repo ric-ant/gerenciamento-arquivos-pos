@@ -74,7 +74,8 @@ st.divider()
 st.markdown("### 📊 Resumo")
 
 try:
-    with next(get_session()) as session:
+   with get_session() as session:
+
         todas = listar_disciplinas(session)
         total = len(todas)
         ativas = sum(1 for d in todas if d.status == Disciplina.STATUS_ATIVA)
