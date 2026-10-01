@@ -36,20 +36,11 @@ from app.models import Disciplina
 criar_tabelas()
 
 
-st.set_page_config(
-    page_title="Gerenciador de Disciplinas",
-    page_icon="🎓",
-    layout="wide",
-)
-
-
-
-
 # ------------------------------------------------------------------ #
 # Configuração global da página                                        #
 # ------------------------------------------------------------------ #
 st.set_page_config(
-    page_title="Gerenciador de Disciplinas",
+    page_title="Gerenciador de Arquivos - Por Ricardo Antonello",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -65,27 +56,15 @@ with st.sidebar:
     st.page_link("pages/cadastro.py", label="➕ Nova Disciplina", icon=None)
     st.page_link("pages/listagem.py", label="📋 Listar Disciplinas", icon=None)
     st.markdown("---")
-    st.caption("Oracle Autonomous Database · Vinhedo (OCI)")
+    st.caption("SqLite")
 
 # ------------------------------------------------------------------ #
 # Corpo principal — Dashboard                                          #
 # ------------------------------------------------------------------ #
 st.title("🎓 Gerenciador de Disciplinas")
-st.markdown("Bem-vindo ao seu sistema pessoal de gerenciamento de disciplinas.")
+st.markdown("Bem-vindo ao seu sistema pessoal de gerenciamento de arquivos das disciplinas.")
 
-# Status da conexão
-st.markdown("### 🔌 Status da Conexão")
-with st.spinner("Verificando conexão com o Oracle ADB..."):
-    conectado = verificar_conexao()
 
-if conectado:
-    st.success("✅ Conectado ao Oracle Autonomous Database")
-else:
-    st.error(
-        "❌ Não foi possível conectar ao Oracle Autonomous Database. "
-        "Verifique o arquivo `.env` e a wallet em `wallet/`."
-    )
-    st.stop()
 
 st.divider()
 

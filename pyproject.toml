@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "projeto-pessoal-bd"
 version = "0.1.0"
-description = "Gerenciador de Disciplinas com Oracle Autonomous Database"
+description = "Gerenciador de Arquivos das Disciplinas"
 authors = ["USUARIO"]
 readme = "README.md"
 
@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.12"
 streamlit = "*"
 sqlalchemy = "*"
-oracledb = "=2.4.0"
+
 python-dotenv = "*"
 
 [tool.poetry.group.dev.dependencies]
