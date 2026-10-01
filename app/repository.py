@@ -54,7 +54,7 @@ def listar_disciplinas(
 
     stmt = (
         select(Disciplina)
-        .order_by(Disciplina.nome)
+        .order_by(Disciplina.id)
     )
 
     if status:
