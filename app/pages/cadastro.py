@@ -2,6 +2,11 @@
 Página: Cadastro de Nova Disciplina
 """
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+
 import streamlit as st
 
 from app.database import get_session

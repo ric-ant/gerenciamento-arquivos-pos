@@ -14,22 +14,21 @@ Estrutura multipage:
 
 
 
-import streamlit as st
+import sys
+from pathlib import Path
 
-
-from app.repository import listar_disciplinas
-from app.models import Disciplina
-
+# Garante que a raiz do projeto está no sys.path tanto localmente
+# quanto no Streamlit Community Cloud
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import streamlit as st
 
 from app.database import (
     criar_tabelas,
     get_session,
-    verificar_conexao,
 )
-from app.repository import listar_disciplinas
 from app.models import Disciplina
+from app.repository import listar_disciplinas
 
 
 criar_tabelas()
